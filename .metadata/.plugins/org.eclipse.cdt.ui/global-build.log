@@ -1,0 +1,20 @@
+01:51:03 **** Incremental Build of configuration Debug for project 004_stm32_rtos_led_button_task_notify ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\prati\Documents\rtos\004_stm32_rtos_led_button_task_notify\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/prati/Documents/rtos/004_stm32_rtos_led_button_task_notify/StdPeriph_Driver/inc" -I"C:/Users/prati/Documents/rtos/004_stm32_rtos_led_button_task_notify/third_party/freeRTOS/org/Source/include" -I"C:/Users/prati/Documents/rtos/004_stm32_rtos_led_button_task_notify/third_party/freeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"C:/Users/prati/Documents/rtos/004_stm32_rtos_led_button_task_notify/config" -I"C:/Users/prati/Documents/rtos/004_stm32_rtos_led_button_task_notify/inc" -I"C:/Users/prati/Documents/rtos/004_stm32_rtos_led_button_task_notify/CMSIS/device" -I"C:/Users/prati/Documents/rtos/004_stm32_rtos_led_button_task_notify/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: 004_stm32_rtos_led_button_task_notify.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/prati/Documents/rtos/004_stm32_rtos_led_button_task_notify/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "004_stm32_rtos_led_button_task_notify.elf" @"objects.list"   -lm
+Finished building target: 004_stm32_rtos_led_button_task_notify.elf
+ 
+C:/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/make/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "004_stm32_rtos_led_button_task_notify.elf" "004_stm32_rtos_led_button_task_notify.bin"
+arm-none-eabi-size "004_stm32_rtos_led_button_task_notify.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9812	   1120	  78284	  89216	  15c80	004_stm32_rtos_led_button_task_notify.elf
+ 
